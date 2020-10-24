@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#00e5e5ff"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.10"
+            android:background="#3F51B5"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/textView_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/SaveActivity"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0.25"
+            android:background="#3F51B5"
+            android:orientation="horizontal"
+            android:outlineProvider="none">
+
+            <Button
+                android:id="@+id/button_Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="#3F51B5"
+                android:onClick="Record"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnReport"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="#3F51B5"
+                android:onClick="Cancel"
+                android:text="@string/cancel"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/btnPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="#3F51B5"
+                android:onClick="TakePicture"
+                android:text="@string/TakePicture"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:id="@+id/textView_Organization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/org"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_Organization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:layout_marginTop="10dp"
+                android:width="250dp"
+                android:textColor="@color/black"
+                android:theme="@style/MyEditTextTheme" />
+
+            <TextView
+                android:id="@+id/textView_Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/act"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:layout_marginTop="10dp"
+                android:width="250dp"
+                android:textColor="@color/black"
+                android:theme="@style/MyEditTextTheme" />
+
+            <TextView
+                android:id="@+id/textView_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="date"
+                android:text="@string/actdate"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_EventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:width="200dp"
+                android:textColor="@color/black"
+                android:theme="@style/MyEditTextTheme" />
+
+            <TextView
+                android:id="@+id/textView_Hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/hour"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_Hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                android:layout_marginTop="10dp"
+                android:width="250dp"
+                android:gravity="left"
+                android:ems="10"
+                android:inputType="number|numberDecimal"
+                android:textColor="@color/black"
+                android:theme="@style/MyEditTextTheme" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

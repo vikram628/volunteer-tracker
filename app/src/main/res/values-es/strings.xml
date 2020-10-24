@@ -1,0 +1,18 @@
+<resources>
+<string name="app_name">Voluntarios Rastreador</string>
+<string name="hello_world">Hola Mundo!</string>
+<string name="org">Organización / Patrocinador</string>
+<string name="act">Actividad</string>
+<string name="actdate">Fecha de Volunterring</string>
+<string name="hour">horas</string>
+<string name="action_settings">Ajustes</string>
+<string name="submit">Ahorrar</string>
+<string name="cancel">Cancelar</string>
+<string name="date_hint">MM/DD/YY</string>
+<string name="title_activity_home_page">Voluntarios Rastreador</string>
+<string name="title_activity_reports">Informe - Mi Voluntariado</string>
+<string name="totalHours">Horas totales=</string>
+<string name="SaveActivity">Guardar Actividad</string>
+<string name="TakePicture">Tomar la foto</string>
+<string name="Gallery">Galería</string>
+ </resources>
